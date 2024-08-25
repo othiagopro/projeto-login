@@ -17,15 +17,15 @@ body, html {
 }
 
 main {
-    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
 }
 
 section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     
 
     background-color: white;
@@ -37,7 +37,6 @@ section#login {
 
     transition: width .3s, height .3s;
     transition-timing-function: ease;
-    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
